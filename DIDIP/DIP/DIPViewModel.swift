@@ -10,7 +10,8 @@ import Foundation
 final class DIPViewModel {
 	private let service: FetchInterface
 
-	init(service: FetchInterface) {
+	init(service: FetchInterface = InternetFetchService()) {
+//   init(service: FetchInterface = DatabaseFetchService()) {
 		self.service = service
 	}
 

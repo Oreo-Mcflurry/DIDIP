@@ -21,5 +21,6 @@ final class DIPViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
+		viewModel.printData()
 	}
 }

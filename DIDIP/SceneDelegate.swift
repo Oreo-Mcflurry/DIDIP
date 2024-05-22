@@ -17,8 +17,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 		window = UIWindow(frame: windowScene.coordinateSpace.bounds)
 		window?.windowScene = windowScene
 //		window?.rootViewController = DIViewController(viewModel: DIViewModel())
-		let service = InternetFetchService()
-		let viewModel = DIPViewModel(service: service)
+		let viewModel = DIPViewModel()
 		window?.rootViewController = DIPViewController(viewModel: viewModel)
 		window?.makeKeyAndVisible()
 	}
